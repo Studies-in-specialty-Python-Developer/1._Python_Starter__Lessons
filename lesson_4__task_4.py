@@ -5,7 +5,7 @@
 
 a = 1
 b = 9
-average = sum(range(a, b + 1)) / (b - a + 1)
+average = sum(range(a, b + 1)) / (len(range(a, b + 1)))
 summa = 0
 for i in range(a, b + 1):
     if i % average == 0:
