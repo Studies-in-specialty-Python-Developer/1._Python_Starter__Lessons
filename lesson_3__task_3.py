@@ -8,16 +8,15 @@
 a = float(input('a = '))
 b = float(input('b = '))
 c = float(input('c = '))
-D = (b ** 2) - (4 * a * c)
-print('D = ', D)
-if D < 0:
+d = (b ** 2) - (4 * a * c)
+print('D = ', d)
+if d < 0:
     print('No real roots')
-elif D == 0:
+elif d == 0:
     print('One real root')
-    x = -b / (2 * a)
-    print('x = ', x)
+    print('x = ', -b / (2 * a))
 else:
     print('Two real roots')
-    x1 = (-b + ((b ** 2) - (4 * a * c)) ** 0.5) / (2 * a)
-    x2 = (-b - ((b ** 2) - (4 * a * c)) ** 0.5) / (2 * a)
+    x1 = (-b + d ** 0.5) / (2 * a)
+    x2 = (-b - d ** 0.5) / (2 * a)
     print('x1 =', x1, '\nx2 =', x2)
