@@ -3,7 +3,7 @@
 стандартні функції. Перевірте їх на практиці.
 """
 
-I read and tested it in practice
+# I read and tested it in practice
 
 abs()
 delattr()

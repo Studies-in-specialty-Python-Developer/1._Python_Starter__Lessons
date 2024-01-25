@@ -19,12 +19,7 @@ print("""Select operation:
  9. Cos
 10. Tan""")
 operation = input('Enter operation number: ')
-if operation not in ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10'):
-    print('Wrong operation')
-    exit()
-arg_1 = 0
-arg_2 = 0
-result = 0
+arg_1 = arg_2 = result = None
 if operation in ('1', '2', '3', '4', '5'):
     arg_1 = float(input('Enter first argument: '))
     arg_2 = float(input('Enter second argument: '))
@@ -50,4 +45,7 @@ elif operation == '9':
     result = cos(arg_1)
 elif operation == '10':
     result = tan(arg_1)
-print('Result =', result)
+else:
+    print('Wrong operation')
+if result:
+    print('Result =', result)

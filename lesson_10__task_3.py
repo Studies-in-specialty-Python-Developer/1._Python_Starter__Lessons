@@ -1,11 +1,9 @@
-""" Урок 8, завдання 3
-Створіть програму-калькулятор, яка підтримує наступні операції: додавання, віднімання,
-множення, ділення, зведення в ступінь, зведення до квадратного та кубічного коренів. Всі дані
-повинні вводитися в циклі, доки користувач не вкаже, що хоче завершити виконання програми.
-Кожна операція має бути реалізована у вигляді окремої функції. Функція ділення повинна
-перевіряти дані на коректність та видавати повідомлення про помилку у разі спроби поділу на
-нуль.
+""" Урок 10, завдання 3
+Створіть інженерний калькулятор з використанням модуля math, в якому передбачене меню. Під
+час створення дотримуйтесь правил специфікації PEP 8.
 """
+import math
+from math import sin, cos, tan, log, factorial
 
 
 def add(x, y):
@@ -28,7 +26,7 @@ def divide(x, y):
 
 
 def power(x, y):
-    return x ** y
+    return math.pow(x, y)
 
 
 def sqrt(x):
@@ -37,6 +35,26 @@ def sqrt(x):
 
 def cube_root(x):
     return x ** (1 / 3)
+
+
+def get_sin(x):
+    return sin(x)
+
+
+def get_cos(x):
+    return cos(x)
+
+
+def get_tan(x):
+    return tan(x)
+
+
+def get_log(x):
+    return log(x)
+
+
+def get_factorial(x):
+    return factorial(x)
 
 
 while True:
@@ -48,6 +66,11 @@ while True:
  5. Power
  6. Sqrt
  7. Cube root
+ 8. Sin
+ 9. Cos
+10. Tan
+11. Log
+12. Factorial
  0. Exit
  """)
     operation = input('Enter operation number: ')
@@ -55,7 +78,7 @@ while True:
     if operation in ('1', '2', '3', '4', '5'):
         arg_x = float(input('Enter x: '))
         arg_y = float(input('Enter y: '))
-    if operation in ('6', '7'):
+    if operation in ('6', '7', '8', '9', '10', '11', '12'):
         arg_x = float(input('Enter argument: '))
     if operation == '1':
         result = add(arg_x, arg_y)
@@ -71,6 +94,16 @@ while True:
         result = sqrt(arg_x)
     elif operation == '7':
         result = cube_root(arg_x)
+    elif operation == '8':
+        result = get_sin(arg_x)
+    elif operation == '9':
+        result = get_cos(arg_x)
+    elif operation == '10':
+        result = get_tan(arg_x)
+    elif operation == '11':
+        result = get_log(arg_x)
+    elif operation == '12':
+        result = get_factorial(round(arg_x))
     elif operation == '0':
         break
     else:

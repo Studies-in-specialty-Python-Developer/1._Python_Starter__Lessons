@@ -39,7 +39,7 @@ while True:
         3 - print the details of all employees by personnel number
         4 - print the details of all employees by full name
         5 - print the details of all employees by efficiency
-        6 - exit 
+        0 - exit 
         """)
     if operation == '1':  # print employee details
         pn = int(input('Enter personnel number: '))
@@ -62,7 +62,8 @@ while True:
     elif operation == '5':  # print the details of all employees by efficiency
         for key, value in sorted(personal.items(), key=lambda x: x[1].efficiency, reverse=True):
             print(f'{key}: {value}')
-    elif operation == '6':
-        exit(0)
+    elif operation == '0':
+        break
     else:
+        print()
         print('Wrong operation')
