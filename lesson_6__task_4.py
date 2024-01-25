@@ -18,4 +18,4 @@ if operation == '1':
 elif operation == '2':
     print('In ascending order: ', sorted(my_list))
 else:
-    print('Invalid operation')
+    print('Wrong operation')

@@ -33,4 +33,4 @@ if operation == '1':
 elif operation == '2':
     print('The product of the prime numbers in range is: ', reduce(lambda x, y: x * y, result))
 else:
-    print('Invalid operation')
+    print('Wrong operation')

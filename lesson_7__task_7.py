@@ -65,4 +65,4 @@ while True:
     elif operation == '6':
         exit(0)
     else:
-        print('Invalid operation')
+        print('Wrong operation')
