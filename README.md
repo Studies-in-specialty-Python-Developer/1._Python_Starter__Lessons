@@ -1,6 +1,6 @@
 # 1._Python_Starter__Lessons
 
-This project contains tasks for independent work in the Python Starter course.
+This project contains tasks for independent work in the Python Starter course. Since these are training assignments, no error handling was used, and clean code rules were not followed.
 The Python Starter course contains lessons on the following topics:
 1. Introduction to Python
 2. Primitive data types and variables
@@ -12,4 +12,3 @@ The Python Starter course contains lessons on the following topics:
 8. Functions, part 1
 9. Functions, part 2
 10. PEP8
-Since these are training assignments, no error handling was used, and clean code rules were not followed.
